@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(libuvc)
 
+set(CMAKE_MACOSX_RPATH 1)
+
 if (NOT CMAKE_BUILD_TYPE)
   message(STATUS "No build type selected, default to Release")
   set(CMAKE_BUILD_TYPE "Release" CACHE STRING "" FORCE)
